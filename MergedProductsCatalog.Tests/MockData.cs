@@ -1,0 +1,143 @@
+﻿using MergedProductsCatalog.Models;
+using System.Collections.Generic;
+
+namespace MergedProductsCatalog.Tests
+{
+    public static class MockData
+    {
+        public static List<Catalog> catalogsA = new List<Catalog>() {
+            new Catalog { SKU ="647-vyk-317", Description ="Walkers Special Old Whiskey" },
+            new Catalog { SKU ="280-oad-768",Description ="Bread - Raisin" },
+            new Catalog { SKU ="165-rcy-650",Description ="Tea - Decaf 1 Cup" },
+            new Catalog { SKU ="167-eol-949",Description ="Cheese - Grana Padano" },
+            new Catalog { SKU ="650-epd-782",Description ="Carbonated Water - Lemon Lime" }
+        };
+        public static List<Supplier> suppliersA = new List<Supplier>()
+        {
+            new Supplier { ID ="00001", Name="Twitterbridge" },
+            new Supplier { ID ="00002",Name="Thoughtsphere" },
+            new Supplier { ID ="00003",Name="Photobug" },
+            new Supplier { ID ="00004",Name="Jatri" },
+            new Supplier { ID ="00005",Name="Trunyx" }
+        };
+        public static List<Product> productsA = new List<Product>() {
+            new Product { SupplierID="00001",SKU="647-vyk-317",Barcode="z2783613083817"},
+            new Product { SupplierID="00001",SKU="647-vyk-317",Barcode="z2783613083818"},
+            new Product { SupplierID="00001",SKU="647-vyk-317",Barcode="z2783613083819"},
+            new Product { SupplierID="00001",SKU="647-vyk-317",Barcode="n7405223693844"},
+            new Product { SupplierID="00001",SKU="647-vyk-317",Barcode="c7417468772846"},
+            new Product { SupplierID="00001",SKU="647-vyk-317",Barcode="w3744746803743"},
+            new Product { SupplierID="00001",SKU="647-vyk-317",Barcode="w2572813758673"},
+            new Product { SupplierID="00001",SKU="647-vyk-317",Barcode="s7013910076253"},
+            new Product { SupplierID="00001",SKU="647-vyk-317",Barcode="m1161615509466"},
+            new Product { SupplierID="00002",SKU="280-oad-768",Barcode="p2359014924610"},
+            new Product { SupplierID="00002",SKU="280-oad-768",Barcode="a7802303764525"},
+            new Product { SupplierID="00002",SKU="280-oad-768",Barcode="o5194275040472"},
+            new Product { SupplierID="00002",SKU="280-oad-768",Barcode="j9023946968130"},
+            new Product { SupplierID="00002",SKU="280-oad-768",Barcode="x5678105140949"},
+            new Product { SupplierID="00002",SKU="280-oad-768",Barcode="c9083052423045"},
+            new Product { SupplierID="00002",SKU="280-oad-768",Barcode="f4322915485228"},
+            new Product { SupplierID="00002",SKU="280-oad-768",Barcode="i0471865670980"},
+            new Product { SupplierID="00002",SKU="280-oad-768",Barcode="i0471865670981"},
+            new Product { SupplierID="00002",SKU="280-oad-768",Barcode="i0471865670982"},
+            new Product { SupplierID="00002",SKU="280-oad-768",Barcode="b4381274928349"},
+            new Product { SupplierID="00003",SKU="165-rcy-650",Barcode="u5160747892301"},
+            new Product { SupplierID="00003",SKU="165-rcy-650",Barcode="m8967092785598"},
+            new Product { SupplierID="00003",SKU="165-rcy-650",Barcode="l7342139757479"},
+            new Product { SupplierID="00003",SKU="165-rcy-650",Barcode="p1667270888414"},
+            new Product { SupplierID="00003",SKU="165-rcy-650",Barcode="v0874763455559"},
+            new Product { SupplierID="00003",SKU="165-rcy-650",Barcode="p9774916416859"},
+            new Product { SupplierID="00003",SKU="165-rcy-650",Barcode="c4858834209466"},
+            new Product { SupplierID="00003",SKU="165-rcy-650",Barcode="x7331732444187"},
+            new Product { SupplierID="00003",SKU="165-rcy-650",Barcode="u7720008047675"},
+            new Product { SupplierID="00003",SKU="165-rcy-650",Barcode="i2431892662423"},
+            new Product { SupplierID="00003",SKU="165-rcy-650",Barcode="o1336108796249"},
+            new Product { SupplierID="00003",SKU="165-rcy-650",Barcode="w7839803663600"},
+            new Product { SupplierID="00004",SKU="167-eol-949",Barcode="a6971219877032"},
+            new Product { SupplierID="00004",SKU="167-eol-949",Barcode="a7340270328026"},
+            new Product { SupplierID="00004",SKU="167-eol-949",Barcode="a0126648261918"},
+            new Product { SupplierID="00004",SKU="167-eol-949",Barcode="a9858014383660"},
+            new Product { SupplierID="00004",SKU="167-eol-949",Barcode="a2338856941909"},
+            new Product { SupplierID="00004",SKU="167-eol-949",Barcode="a5056026479965"},
+            new Product { SupplierID="00004",SKU="167-eol-949",Barcode="a7425424390056"},
+            new Product { SupplierID="00004",SKU="167-eol-949",Barcode="a0864219864945"},
+            new Product { SupplierID="00004",SKU="167-eol-949",Barcode="a1257743939800"},
+            new Product { SupplierID="00004",SKU="167-eol-949",Barcode="a0880467790155"},
+            new Product { SupplierID="00004",SKU="167-eol-949",Barcode="a4469253605532"},
+            new Product { SupplierID="00004",SKU="167-eol-949",Barcode="a0891358702681"},
+            new Product { SupplierID="00005",SKU="650-epd-782",Barcode="n8954999835177"},
+            new Product { SupplierID="00005",SKU="650-epd-782",Barcode="d2381485695273"},
+            new Product { SupplierID="00005",SKU="650-epd-782",Barcode="y0588794459804"},
+            new Product { SupplierID="00005",SKU="650-epd-782",Barcode="v8710606253394"},
+            new Product { SupplierID="00005",SKU="650-epd-782",Barcode="o5184937926186"},
+            new Product { SupplierID="00005",SKU="650-epd-782",Barcode="r4059282550570"},
+            new Product { SupplierID="00005",SKU="650-epd-782",Barcode="k3213966445562"},
+            new Product { SupplierID="00005",SKU="650-epd-782",Barcode="a3343396882074"},
+        };
+
+        public static List<Catalog> catalogsB = new List<Catalog>() {
+            new Catalog { SKU ="999-vyk-317", Description="Walkers Special Old Whiskey test" },
+            new Catalog { SKU ="999-oad-768", Description="Bread - Raisin"},
+            new Catalog { SKU ="165-rcy-650", Description="Tea - Decaf 1 Cup"},
+            new Catalog { SKU ="999-eol-949", Description="Cheese - Grana Padano"},
+            new Catalog { SKU ="999-epd-782", Description="Carbonated Water - Lemon Lime"},
+        };
+        public static List<Supplier> suppliersB = new List<Supplier>() {
+            new Supplier { ID ="00001", Name="Wikivu" },
+            new Supplier { ID ="00002", Name="Divavu" },
+            new Supplier { ID ="00003", Name="Flashdog" },
+            new Supplier { ID ="00004", Name="Bluejam" },
+            new Supplier { ID ="00005", Name="Twitterworks" }
+        };
+        public static List<Product> productsB = new List<Product>() {
+            new Product { SupplierID = "00001", SKU="999-vyk-317", Barcode = "z2783613083817" },
+            new Product { SupplierID = "00001", SKU="999-vyk-317", Barcode = "n7405223693844" },
+            new Product { SupplierID = "00001", SKU="999-vyk-317", Barcode = "c7417468772846" },
+            new Product { SupplierID = "00001", SKU="999-vyk-317", Barcode = "w3744746803743" },
+            new Product { SupplierID = "00001", SKU="999-vyk-317", Barcode = "w2572813758673" },
+            new Product { SupplierID = "00001", SKU="999-vyk-317", Barcode = "s7013910076253" },
+            new Product { SupplierID = "00001", SKU="999-vyk-317", Barcode = "m1161615509466" },
+            new Product { SupplierID = "00002", SKU="999-oad-768", Barcode = "p2359014924610" },
+            new Product { SupplierID = "00002", SKU="999-oad-768", Barcode = "a7802303764525" },
+            new Product { SupplierID = "00002", SKU="999-oad-768", Barcode = "o5194275040472" },
+            new Product { SupplierID = "00002", SKU="999-oad-768", Barcode = "j9023946968130" },
+            new Product { SupplierID = "00002", SKU="999-oad-768", Barcode = "x5678105140949" },
+            new Product { SupplierID = "00002", SKU="999-oad-768", Barcode = "c9083052423045" },
+            new Product { SupplierID = "00002", SKU="999-oad-768", Barcode = "f4322915485228" },
+            new Product { SupplierID = "00002", SKU="999-oad-768", Barcode = "i0471865670980" },
+            new Product { SupplierID = "00002", SKU="999-oad-768", Barcode = "b4381274928349" },
+            new Product { SupplierID = "00003", SKU="165-rcy-650", Barcode = "u5160747892301" },
+            new Product { SupplierID = "00003", SKU="165-rcy-650", Barcode = "m8967092785598" },
+            new Product { SupplierID = "00003", SKU="165-rcy-650", Barcode = "l7342139757479" },
+            new Product { SupplierID = "00003", SKU="165-rcy-650", Barcode = "p1667270888414" },
+            new Product { SupplierID = "00003", SKU="165-rcy-650", Barcode = "v0874763455559" },
+            new Product { SupplierID = "00003", SKU="165-rcy-650", Barcode = "p9774916416859" },
+            new Product { SupplierID = "00003", SKU="165-rcy-650", Barcode = "c4858834209466" },
+            new Product { SupplierID = "00003", SKU="165-rcy-650", Barcode = "x7331732444187" },
+            new Product { SupplierID = "00003", SKU="165-rcy-650", Barcode = "u7720008047675" },
+            new Product { SupplierID = "00003", SKU="165-rcy-650", Barcode = "i2431892662423" },
+            new Product { SupplierID = "00003", SKU="165-rcy-650", Barcode = "o1336108796249" },
+            new Product { SupplierID = "00003", SKU="165-rcy-650", Barcode = "w7839803663600" },
+            new Product { SupplierID = "00004", SKU="999-eol-949", Barcode = "x6971219877032" },
+            new Product { SupplierID = "00004", SKU="999-eol-949", Barcode = "x7340270328026" },
+            new Product { SupplierID = "00004", SKU="999-eol-949", Barcode = "x0126648261918" },
+            new Product { SupplierID = "00004", SKU="999-eol-949", Barcode = "x9858014383660" },
+            new Product { SupplierID = "00004", SKU="999-eol-949", Barcode = "x2338856941909" },
+            new Product { SupplierID = "00004", SKU="999-eol-949", Barcode = "x5056026479965" },
+            new Product { SupplierID = "00004", SKU="999-eol-949", Barcode = "x7425424390056" },
+            new Product { SupplierID = "00004", SKU="999-eol-949", Barcode = "x0864219864945" },
+            new Product { SupplierID = "00004", SKU="999-eol-949", Barcode = "x1257743939800" },
+            new Product { SupplierID = "00004", SKU="999-eol-949", Barcode = "x0880467790155" },
+            new Product { SupplierID = "00004", SKU="999-eol-949", Barcode = "x4469253605532" },
+            new Product { SupplierID = "00004", SKU="999-eol-949", Barcode = "x0891358702681" },
+            new Product { SupplierID = "00005", SKU="999-epd-782", Barcode = "b8954999835177" },
+            new Product { SupplierID = "00005", SKU="999-epd-782", Barcode = "b2381485695273" },
+            new Product { SupplierID = "00005", SKU="999-epd-782", Barcode = "b0588794459804" },
+            new Product { SupplierID = "00005", SKU="999-epd-782", Barcode = "b8710606253394" },
+            new Product { SupplierID = "00005", SKU="999-epd-782", Barcode = "b5184937926186" },
+            new Product { SupplierID = "00005", SKU="999-epd-782", Barcode = "b4059282550570" },
+            new Product { SupplierID = "00005", SKU="999-epd-782", Barcode = "b3213966445562" },
+            new Product { SupplierID = "00005", SKU="999-epd-782", Barcode = "b3343396882074" }
+        };
+    }
+}

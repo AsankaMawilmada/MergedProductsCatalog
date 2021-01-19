@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/MergedProductsCatalog
+/Files/result_output.csv
+/MergedProductsCatalog/.vs/MergedProductsCatalog/v16
+/MergedProductsCatalog/bin/Debug/netcoreapp3.1
+/MergedProductsCatalog/obj
+/MergedProductsCatalog.Tests/bin/Debug/netcoreapp3.1
+/MergedProductsCatalog.Tests/obj
